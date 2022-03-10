@@ -33,11 +33,10 @@ export default async (req, res) => {
               <div style="font-size: 16px;">
               <p>Thank you for contacting me through my website. I'm excited to know more about you.</p>
               <p><span class="spantext" style="font-weight: bold;">Reply</span> to this email with your fascinating ideas and I will get back to you.</p>
-              <p>Meanwhile, <a class="blog" href="https://${DOMAIN}/blog/" style="text-decoration: none;color: blue;font-weight: bold;">checkout my blog</a> to get more insights about me.</p>
               <p>Or simply, just say Hi :) <a href="https://wa.me/${Social.COUNTRY_CODE_PNO}${Social.PHONE_NO}?text=Hi" target="__blank" class="whatsapp" style="text-decoration: none;font-weight: bold;background: #10B981;padding: 4px;border-radius: 5px;color: white;">WhatsApp</a></p>
               <br>
               </div>
-              <img src="https://${DOMAIN}/logo.png" class="logo-image" style="height: 50px;width: 50px;border-radius: 5px;overflow: hidden;">
+              <img src="https://${DOMAIN}/logo.png" class="logo-image" style="height: 50px;width: 50px;border-radius: 5px;overflow: hidden;display:block" width="512" height="512" alt="Logo" title="Logo">
               <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Regards<br>${NAME}<br>Software Developer<br>+${Social.COUNTRY_CODE_PNO} ${Social.PHONE_NO}</p>
               <div class="footer-links" style="display: flex;justify-content: center;align-items: center;">
                 <a href="https://${DOMAIN}/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Website</a>
