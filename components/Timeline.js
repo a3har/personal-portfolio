@@ -158,6 +158,45 @@ export default function Timeline() {
       <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
         Timeline
       </h3>
+      <Year>2022</Year>
+      <ul>
+        <Step
+          title={
+            <div>
+              Took ownership of
+              <a
+                className="px-1 text-yellow-500"
+                href="https://apps.shopify.com/otis-pwa-push-notifications"
+                target="_blank"
+              >
+                PWA Mobile App & Notifications
+              </a>{" "}
+              📱
+            </div>
+          }
+        >
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span> Brought back PWA functionality
+          </span>
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span> <span>Revamped onboarding</span>
+          </span>
+        </Step>
+        <Step
+          title={
+            <div>
+              Added dashboard support for A/B Testing for
+              <a
+                className="px-1 text-yellow-500"
+                href="https://apps.shopify.com/recommendation-kit"
+                target="_blank"
+              >
+                Personalized Recommendations.
+              </a>
+            </div>
+          }
+        ></Step>
+      </ul>
       <Year>2021</Year>
       <ul>
         <Step
@@ -193,23 +232,38 @@ export default function Timeline() {
             </div>
           }
         >
-          <span>🔸Joined a blazing fast paced startup as employee #1</span>
-          <span>
-            🔸Worked on the flagship product{" "}
-            <a
-              className="pr-1 text-yellow-500"
-              href="https://apps.shopify.com/recommendation-kit"
-              target="_blank"
-            >
-              Personalized Recommendations.
-            </a>
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span>{" "}
+            <span> Joined a blazing fast paced startup as employee #1</span>
           </span>
-          <span>
-            🔸Catered to customer support to gather feedback and then
-            implemented features / fixed bugs for the same.
+
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span>
+            <span>
+              Worked on the flagship product{" "}
+              <a
+                className="pr-1 text-yellow-500"
+                href="https://apps.shopify.com/recommendation-kit"
+                target="_blank"
+              >
+                Personalized Recommendations.
+              </a>
+            </span>
           </span>
-          <span>
-            🔸Wore multiple hats and got to work with experienced veterans
+
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span>
+            <span>
+              Catered to customer support to gather feedback and then
+              implemented features / fixed bugs for the same.
+            </span>
+          </span>
+
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span>
+            <span>
+              Wore multiple hats and got to work with experienced veterans
+            </span>
           </span>
         </Step>
       </ul>
@@ -231,10 +285,17 @@ export default function Timeline() {
             </div>
           }
         >
-          <span>🔸Worked on cloud technologies like AWS IoT Greengrass</span>
-          <span>
-            🔸Developed a Career Portal using DotNet Core MVC, AWS
-            ElasticBeanstalk and S3.
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span>{" "}
+            <span>Worked on cloud technologies like AWS IoT Greengrass</span>
+          </span>
+
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span>{" "}
+            <span>
+              Developed a Career Portal using DotNet Core MVC, AWS
+              ElasticBeanstalk and S3.
+            </span>
           </span>
         </Step>
         <Step title="Graduated with multiple job offers 👨🏼‍🎓">
@@ -242,33 +303,54 @@ export default function Timeline() {
           as a Programmer Analyst Trainee
         </Step>
         <Step title="Joined Verboculary as an intern 🎉">
-          <span>
-            🔸Developed reusable components in Angular, Ionic and Typescript for
-            <a
-              className="px-1 text-yellow-500"
-              href="https://play.google.com/store/apps/details?id=com.GREninja.GRE.vocabulary"
-              target="_blank"
-            >
-              GRE Ninja
-            </a>
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span>{" "}
+            <span>
+              Developed reusable components in Angular, Ionic and Typescript for
+              <a
+                className="px-1 text-yellow-500"
+                href="https://play.google.com/store/apps/details?id=com.GREninja.GRE.vocabulary"
+                target="_blank"
+              >
+                GRE Ninja
+              </a>
+            </span>
           </span>
-          <span>🔸Designing and Prototyping of screens in Figma</span>
-          <span>🔸Dockerization and Setting up CI / CD pipeline</span>
+
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span>{" "}
+            <span>Designing and Prototyping of screens in Figma</span>
+          </span>
+
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span>{" "}
+            <span>Dockerization and Setting up CI / CD pipeline</span>
+          </span>
         </Step>
       </ul>
       <Divider />
       <Year>2019</Year>
       <ul>
         <Step title="Elected as Treasurer for CSI 🙋🏼‍♂️">
-          <span>
-            🔸Conducted IDEA Pitching, Technical Workshops, Poster Designing and
-            other events as part of the EXEC-COM for Computer Society of India (
-            CSI Student Branch ) .
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span>{" "}
+            <span>
+              Conducted IDEA Pitching, Technical Workshops, Poster Designing and
+              other events as part of the EXEC-COM for Computer Society of India
+              ( CSI Student Branch ) .
+            </span>
           </span>
-          <span>🔸Spearheaded Coder of the Month</span>
-          <span>
-            🔸Won second place for Code Debugging at the CSI STATE STUDENT
-            CONVENTION
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span>{" "}
+            <span>Spearheaded Coder of the Month</span>
+          </span>
+
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span>{" "}
+            <span>
+              Won second place for Code Debugging at the CSI STATE STUDENT
+              CONVENTION
+            </span>
           </span>
         </Step>
         <Step title="Got hands dirty with Machine Learning 🧑🏼‍💻">
