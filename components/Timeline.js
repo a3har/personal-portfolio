@@ -160,6 +160,16 @@ export default function Timeline() {
       </h3>
       <Year>2022</Year>
       <ul>
+        <Step title={<div>Promoted to Senior Engineer 🧑‍🔬</div>}>
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span> Increasing AoV for Shopify
+            merchants through checkout funnels.
+          </span>
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span> Interviewing candidates for
+            Software Engineering (Frontend).
+          </span>
+        </Step>
         <Step
           title={
             <div>
