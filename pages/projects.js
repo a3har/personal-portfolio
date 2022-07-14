@@ -63,7 +63,7 @@ export default function projects() {
           title="Food Menu - UI Design"
           description="View the restaurant menu before you enter it."
           href="https://www.figma.com/file/dSFqCEq0OQ4s1KmPunV8jk/Food-Menu?node-id=0%3A1"
-          Icon={Icons.Pizza}
+          Icon={Icons["Pizza"]}
           tags={["Figma", "UI Design"]}
         />
 

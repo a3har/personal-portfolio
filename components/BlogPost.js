@@ -11,12 +11,12 @@ const BlogPost = ({ title, summary, slug }) => {
   return (
     <Link href={`/blog/${slug}`}>
       <a className="w-full">
-        <div className="mb-8 w-full">
-          <div className="flex flex-col md:flex-row justify-between">
-            <h4 className="text-lg blog-heading md:text-xl mb-2 w-full text-gray-900 dark:text-gray-100">
+        <div className="w-full mb-8">
+          <div className="flex flex-col justify-between md:flex-row">
+            <h4 className="w-full mb-2 text-lg text-gray-900 blog-heading md:text-xl dark:text-gray-100">
               {title}
             </h4>
-            <p className="text-gray-500 text-left md:text-right w-32 mb-4 md:mb-0">
+            <p className="w-32 mb-4 text-left text-gray-500 md:text-right md:mb-0">
               {`${views ? format(views) : "–––"} views`}
             </p>
           </div>

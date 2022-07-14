@@ -36,16 +36,16 @@ export default function Blog({ posts }) {
   return (
     <Container
       title={`Blog – ${NAME}`}
-      description="Thoughts on the Software Development, Programming, Tech, Freelancing, Open Source and Memes"
+      description={`Discover what goes on inside my brain.`}
     >
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
           Blog
         </h1>
         <p className="mb-4 text-gray-600 dark:text-gray-400">
-          {`I've been programming for almost 6 years now. Throughout this year, I've worked with various technologies. I'm here to share just that.
-            
-            Use the search below to filter by title.`}
+          {`Rants about different stuffs. Disagree/Agree with what I have to say ? Ping me. Let's have a chat `}
+
+          {/* {`Use the search below to filter by title.`} */}
         </p>
         <div className="relative w-full mb-4">
           <input
@@ -72,32 +72,17 @@ export default function Blog({ posts }) {
         </div>
         {!searchValue && (
           <>
-            {/* <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
+            <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
               Most Popular
             </h3>
             <BlogPost
-              title="Top 5 courses and resources to learn Next JS in 2021"
-              summary="Get the top 5 resources to learn Next JS in 2021 and take your React skills to the next level."
-              slug="top-5-nextjs-resources"
+              title="How to get good at something?"
+              summary="Reasons why you could be average at some stuffs and how you can overcome your hurdles in your career and life."
+              slug="how-to-get-good-at-something"
             />
-            <BlogPost
-              title="How I built a blogging platform like Medium with Next.js"
-              summary="Insights and structure of devmedium, A blogging platform built with Next.js with features like custom usernames, create blogs and various optimization techniques"
-              slug="blogging-platform-nextjs"
-            /> */}
-            {/* <BlogPost
-              title="How to design a minimal and beautiful website which actually converts"
-              summary="Examining the tips and tricks used to make a website design a notch above the rest."
-              slug="css-with-react"
-            />
-            <BlogPost
-              title="Using real world projects to build better learning habits"
-              summary="In this guide, you will learn how to take an idea and convert it into a real world application, while learning on the go."
-              slug="css-with-react"
-            /> */}
           </>
         )}
-        <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
+        {/* <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
           All Posts
         </h3>
         {!filteredBlogPosts.length && (
@@ -107,7 +92,7 @@ export default function Blog({ posts }) {
         )}
         {filteredBlogPosts.map((frontMatter) => (
           <BlogPost key={frontMatter.title} {...frontMatter} />
-        ))}
+        ))} */}
       </div>
     </Container>
   );
