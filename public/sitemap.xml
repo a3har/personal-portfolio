@@ -29,14 +29,14 @@
   </url>
 
   <url>
-    <loc>https://a3har.com/snippets/spotify</loc>
-  </url>
-
-  <url>
     <loc>https://a3har.com/blog/how-to-get-good-at-something</loc>
   </url>
 
   <url>
     <loc>https://a3har.com/blog/top-5-nextjs-resources</loc>
+  </url>
+
+  <url>
+    <loc>https://a3har.com/snippets/spotify</loc>
   </url>
 </urlset>
