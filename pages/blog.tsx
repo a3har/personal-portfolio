@@ -2,13 +2,39 @@ import { useState } from "react";
 
 import Container from "@/components/Container";
 import BlogPost from "@/components/BlogPost";
+import { ContentfulService } from "core/contentful";
 import { getAllFilesFrontMatter } from "@/lib/mdx";
 import { NAME } from "constants/app";
 
-export async function getStaticProps() {
+export async function getStaticProps({ query }) {
   const posts = await getAllFilesFrontMatter("blog");
+  const contentfulService = new ContentfulService();
 
-  return { props: { posts } };
+  let page: number = 1;
+
+  if (query.page) {
+    page = parseInt(query.page + "");
+  }
+
+  let limit = 3;
+  // const { entries, total, skip } = await contentfulService.getBlogPostEntries({
+  //   tag: query.tag ? query.tag.toString() : "",
+  //   skip: (page - 1) * limit,
+  //   limit,
+  // });
+
+  const { tags } = await contentfulService.getAllTags();
+
+  return {
+    props: {
+      page,
+      tags,
+      posts,
+      // entries, total, skip,
+
+      limit,
+    },
+  };
 }
 
 // Ghost CMS Way
