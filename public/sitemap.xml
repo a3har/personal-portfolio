@@ -29,6 +29,10 @@
   </url>
 
   <url>
+    <loc>https://a3har.com/snippets/spotify</loc>
+  </url>
+
+  <url>
     <loc>https://a3har.com/blog/how-to-get-good-at-something</loc>
   </url>
 
@@ -37,6 +41,8 @@
   </url>
 
   <url>
-    <loc>https://a3har.com/snippets/spotify</loc>
+    <loc
+      >https://a3har.com/blog/top-5-ways-to-stay-updated-as-a-software-engineer</loc
+    >
   </url>
 </urlset>

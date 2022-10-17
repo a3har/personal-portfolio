@@ -80,6 +80,11 @@ export default function Blog({ posts }) {
               summary="Reasons why you could be average at some stuffs and how you can overcome your hurdles in your career and life."
               slug="how-to-get-good-at-something"
             />
+            <BlogPost
+              title="Top 5 resources to stay updated as a software engineer"
+              summary="My recommendations for the best content creators/influencers in the engineering space"
+              slug="top-5-ways-to-stay-updated-as-a-software-engineer"
+            />
           </>
         )}
         {/* <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
