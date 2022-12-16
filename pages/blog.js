@@ -85,6 +85,11 @@ export default function Blog({ posts }) {
               summary="My recommendations for the best content creators/influencers in the engineering space"
               slug="top-5-ways-to-stay-updated-as-a-software-engineer"
             />
+            <BlogPost
+              title="A few life experiences from a 23 year old"
+              summary="Things that I have learned over the years that help me harden my resolve"
+              slug="life-experiences-of-a-24-year-old"
+            />
           </>
         )}
         {/* <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
