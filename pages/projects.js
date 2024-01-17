@@ -1,10 +1,10 @@
-import React from "react";
-import Container from "@/components/Container";
-import Link from "next/link";
-import ProjectCard from "@/components/ProjectCard";
-import Contact from "@/components/Contact";
-import { NAME } from "constants/app";
-import Icons from "@/components/Icons";
+import React from "react"
+import Container from "@/components/Container"
+import Link from "next/link"
+import ProjectCard from "@/components/ProjectCard"
+import Contact from "@/components/Contact"
+import { NAME } from "constants/app"
+import Icons from "@/components/Icons"
 
 export default function projects() {
   return (
@@ -24,27 +24,26 @@ export default function projects() {
         <h3 className="mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
           Full-Stack
         </h3>
-
         <ProjectCard
-          title="Checkout Upsells & Promotions - Dashboard"
-          description="One Click Native Checkout Promotions Builder to increase AoV"
-          href="https://apps.shopify.com/checkout-upsell-promotions"
-          Icon={Icons.Glood}
-          tags={["Tailwind", "React", "Shopify"]}
+          title="Zella AI: The AI Gateway"
+          description="Unified API Gateway for adding AI"
+          href="https://zella.ai/"
+          Icon={Icons.Zella}
+          tags={["Next", "Node", "LLM", "AI"]}
+        />
+        <ProjectCard
+          title="Checkout Sections & Upsell AI"
+          description="Checkout Customizations. Order & Shipping Upsell, Checkout Rules, Delivery & Payment Customizations"
+          href="https://apps.shopify.com/future-ai-custom-discounts"
+          Icon={Icons.Checkout}
+          tags={["React", "Node", "Shopify"]}
         />
         <ProjectCard
           title="GRE Ninja"
           description="Learn important GRE words easily on GREninja app with flashcards, contextual image and podcasts."
           href="https://play.google.com/store/apps/details?id=com.GREninja.GRE.vocabulary"
           Icon={Icons.GreNinja}
-          tags={["Angular", "Firebase", "Merriam-Webster"]}
-        />
-        <ProjectCard
-          title="Medical Record Documentation System"
-          description="An efficient way to digitize paper lab reports and navigate through the data"
-          href="https://github.com/a3har/MRDS"
-          Icon={Icons.Stethoscope}
-          tags={["Python", "AWS", "Medicine"]}
+          tags={["Angular", "Firebase", "Ionic"]}
         />
 
         <h3 className="mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
@@ -52,10 +51,10 @@ export default function projects() {
         </h3>
 
         <ProjectCard
-          title="Only1 Dashboard - Frontend"
-          description="A feature packed dashboard for team management."
-          href="https://only1.a3har.com"
-          Icon={Icons.Only1}
+          title="Rent Rover - UI Design"
+          description="A feature packed dashboard for landlords for tenant and property management."
+          href="https://www.figma.com/file/S9W24aZWF3jKfU2yx6MMWU/RentRover?type=design&node-id=0%3A1&mode=design&t=CHmTJ6zwZZcFBIOW-1"
+          Icon={Icons.RentRover}
           tags={["React", "Frontend"]}
         />
 
@@ -123,5 +122,5 @@ export default function projects() {
         <Contact />
       </div>
     </Container>
-  );
+  )
 }

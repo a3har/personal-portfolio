@@ -1,31 +1,31 @@
-import Container from "@/components/Container";
-import Link from "next/link";
-import BlogPost from "@/components/BlogPost";
-import ProjectCard from "@/components/ProjectCard";
-import Timeline from "@/components/Timeline";
-import Contact from "@/components/Contact";
+import Container from "@/components/Container"
+import Link from "next/link"
+import BlogPost from "@/components/BlogPost"
+import ProjectCard from "@/components/ProjectCard"
+import Timeline from "@/components/Timeline"
+import Contact from "@/components/Contact"
 
-import { LIGHT_COLORS } from "@/lib/constants";
+import { LIGHT_COLORS } from "@/lib/constants"
 
-import { shuffleArray } from "@/lib/shuffleArray";
-import { useEffect, useState } from "react";
-import { RainbowHighlight } from "@/ui/RainbowHighlight";
+import { shuffleArray } from "@/lib/shuffleArray"
+import { useEffect, useState } from "react"
+import { RainbowHighlight } from "@/ui/RainbowHighlight"
 
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
-import { useIsFontReady } from "@/lib/useIsFontReady";
-import { LinkPreview } from "@/components/LinkPreview";
-import { StaticLinkPreview } from "@/components/StaticLinkPreview";
-import * as AppConfig from "constants/app";
-import Icons from "@/components/Icons";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation"
+import { useIsFontReady } from "@/lib/useIsFontReady"
+import { LinkPreview } from "@/components/LinkPreview"
+import { StaticLinkPreview } from "@/components/StaticLinkPreview"
+import * as AppConfig from "constants/app"
+import Icons from "@/components/Icons"
 
 export default function Home() {
-  const [colors, setColors] = useState([]);
+  const [colors, setColors] = useState([])
 
-  const isFontReady = useIsFontReady();
+  const isFontReady = useIsFontReady()
 
   useEffect(() => {
-    setColors(shuffleArray(LIGHT_COLORS));
-  }, []);
+    setColors(shuffleArray(LIGHT_COLORS))
+  }, [])
   return (
     <Container
       title={AppConfig.TITLE}
@@ -64,25 +64,25 @@ export default function Home() {
           Projects
         </h3>
         <ProjectCard
-          title="Checkout Upsells & Promotions - Dashboard"
-          description="One Click Native Checkout Promotions Builder to increase AoV"
-          href="https://apps.shopify.com/checkout-upsell-promotions"
-          Icon={Icons.Glood}
-          tags={["Tailwind", "React", "Shopify"]}
+          title="Zella AI: The AI Gateway"
+          description="Unified API Gateway for adding AI"
+          href="https://zella.ai/"
+          Icon={Icons.Zella}
+          tags={["Next", "Node", "LLM", "AI"]}
+        />
+        <ProjectCard
+          title="Checkout Sections & Upsell AI"
+          description="Checkout Customizations. Order & Shipping Upsell, Checkout Rules, Delivery & Payment Customizations"
+          href="https://apps.shopify.com/future-ai-custom-discounts"
+          Icon={Icons.Checkout}
+          tags={["React", "Node", "Shopify"]}
         />
         <ProjectCard
           title="GRE Ninja"
           description="Learn important GRE words easily on GREninja app with flashcards, contextual image and podcasts."
           href="https://play.google.com/store/apps/details?id=com.GREninja.GRE.vocabulary"
           Icon={Icons.GreNinja}
-          tags={["Angular", "Firebase", "Merriam-Webster"]}
-        />
-        <ProjectCard
-          title="Medical Record Documentation System"
-          description="An efficient way to digitize paper lab reports and navigate through the data"
-          href="https://github.com/a3har/MRDS"
-          Icon={Icons.Stethoscope}
-          tags={["Python", "AWS", "Medicine"]}
+          tags={["Angular", "Firebase", "Ionic"]}
         />
 
         <Link href="/projects">
@@ -111,5 +111,5 @@ export default function Home() {
         <Contact />
       </div>
     </Container>
-  );
+  )
 }

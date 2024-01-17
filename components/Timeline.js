@@ -1,18 +1,18 @@
-import { useState } from "react";
+import { useState } from "react"
 
 const Divider = () => {
   return (
     <div className="w-full my-8 border border-gray-200 dark:border-gray-600" />
-  );
-};
+  )
+}
 
 const Year = ({ children }) => {
   return (
     <h3 className="mb-4 text-lg font-bold tracking-tight text-gray-900 md:text-xl dark:text-gray-100">
       {children}
     </h3>
-  );
-};
+  )
+}
 
 const Step = ({ title, children }) => {
   return (
@@ -37,11 +37,128 @@ const Step = ({ title, children }) => {
         {children}
       </div>
     </li>
-  );
-};
+  )
+}
 
 const FullTimeline = () => (
   <>
+    <Divider />
+    <Year>2020</Year>
+    <ul>
+      <Step
+        title={
+          <div>
+            Joined{" "}
+            <a
+              className="pr-1 text-yellow-500"
+              href="https://www.cognizant.com"
+              target="_blank"
+            >
+              Cognizant
+            </a>{" "}
+            🎉
+          </div>
+        }
+      >
+        <span className="flex flex-row items-center justify-start">
+          <span className="pr-2">🔸</span>{" "}
+          <span>Worked on cloud technologies like AWS IoT Greengrass</span>
+        </span>
+
+        <span className="flex flex-row items-center justify-start">
+          <span className="pr-2">🔸</span>{" "}
+          <span>
+            Developed a Career Portal using DotNet Core MVC, AWS
+            ElasticBeanstalk and S3.
+          </span>
+        </span>
+      </Step>
+      <Step title="Graduated with multiple job offers 👨🏼‍🎓">
+        Had 3 offers in hand from Indias top MNCs. Decided to join Cognizant as
+        a Programmer Analyst Trainee
+      </Step>
+      <Step title="Joined Verboculary as an intern 🎉">
+        <span className="flex flex-row items-center justify-start">
+          <span className="pr-2">🔸</span>{" "}
+          <span>
+            Developed reusable components in Angular, Ionic and Typescript for
+            <a
+              className="px-1 text-yellow-500"
+              href="https://play.google.com/store/apps/details?id=com.GREninja.GRE.vocabulary"
+              target="_blank"
+            >
+              GRE Ninja
+            </a>
+          </span>
+        </span>
+
+        <span className="flex flex-row items-center justify-start">
+          <span className="pr-2">🔸</span>{" "}
+          <span>Designing and Prototyping of screens in Figma</span>
+        </span>
+
+        <span className="flex flex-row items-center justify-start">
+          <span className="pr-2">🔸</span>{" "}
+          <span>Dockerization and Setting up CI / CD pipeline</span>
+        </span>
+      </Step>
+    </ul>
+    <Divider />
+    <Year>2019</Year>
+    <ul>
+      <Step title="Elected as Treasurer for CSI 🙋🏼‍♂️">
+        <span className="flex flex-row items-center justify-start">
+          <span className="pr-2">🔸</span>{" "}
+          <span>
+            Conducted IDEA Pitching, Technical Workshops, Poster Designing and
+            other events as part of the EXEC-COM for Computer Society of India (
+            CSI Student Branch ) .
+          </span>
+        </span>
+        <span className="flex flex-row items-center justify-start">
+          <span className="pr-2">🔸</span>{" "}
+          <span>Spearheaded Coder of the Month</span>
+        </span>
+
+        <span className="flex flex-row items-center justify-start">
+          <span className="pr-2">🔸</span>{" "}
+          <span>
+            Won second place for Code Debugging at the CSI STATE STUDENT
+            CONVENTION
+          </span>
+        </span>
+      </Step>
+      <Step title="Got hands dirty with Machine Learning 🧑🏼‍💻">
+        <div>
+          Developed a{" "}
+          <a
+            className="text-yellow-500 "
+            href="https://github.com/a3har/Lab_report_detector"
+            target="_blank"
+          >
+            model
+          </a>{" "}
+          to detect the important parts of a printed lab report. Initially used
+          Yolo v4 to train the annotated images but then tried Detectron and
+          found better results.{" "}
+        </div>
+      </Step>
+      <Step title="Developed medical record documentation system 🧑🏼‍⚕️">
+        <div>
+          Created a{" "}
+          <a
+            className="text-yellow-500 "
+            href="https://github.com/a3har/MRDS"
+            target="_blank"
+          >
+            system
+          </a>{" "}
+          to digitize paper lab reports and extract structured data as part of
+          my final year project at the university. Used AWS Textract and Regular
+          Expression to achieve it and created a web service using Django
+        </div>
+      </Step>
+    </ul>
     <Divider />
     <Year>2019</Year>
     <ul>
@@ -148,16 +265,117 @@ const FullTimeline = () => (
       <Step title="An Engineer was Born in Bahrain 👶🏼 🍼" />
     </ul>
   </>
-);
+)
 
 export default function Timeline() {
-  const [isShowingFullTimeline, showFullTimeline] = useState(false);
+  const [isShowingFullTimeline, showFullTimeline] = useState(false)
 
   return (
     <>
       <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
         Timeline
       </h3>
+      <Year>2023</Year>
+      <span className="mb-2 text-gray-700 dark:text-gray-400">
+        This year was an amazing one for me as it was one of experimentations
+      </span>
+      <ul>
+        <Step
+          title={
+            <div>
+              <a
+                className="px-1 text-yellow-500"
+                href="https://zella.ai/"
+                target="_blank"
+              >
+                Zella AI: The AI Gateway
+              </a>
+              🌐
+            </div>
+          }
+        >
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span> Led the development of a robust AI
+            gateway tool.
+          </span>
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span> Ensured seamless AI integrations
+            and operations.
+          </span>
+        </Step>
+        <Step
+          title={
+            <div>
+              Shopify Plugin:
+              <a
+                className="px-1 text-yellow-500"
+                href="https://apps.shopify.com/future-ai-custom-discounts"
+                target="_blank"
+              >
+                Checkout Sections & Upsell AI
+              </a>{" "}
+              💼
+            </div>
+          }
+        >
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span> Developed a customizable,
+            AI-powered Shopify plugin.
+          </span>
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span> Enhanced checkout experience to
+            boost merchant's AoV.
+          </span>
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span> Introduced advanced discount
+            options to protect revenue.
+          </span>
+        </Step>
+        <Step title={<div>Workplace Assistant 🤖</div>}>
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span> Created a workplace assistant that
+            makes use of LLMs.
+          </span>
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span> Streamlined communication between
+            colleagues by providing AI-driven responses.
+          </span>
+        </Step>
+        <Step title={<div>PM Insight Tool 📊</div>}>
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span> Developed an insight tool for
+            project managers.
+          </span>
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span> Identified potential new features
+            and current customer pain points.
+          </span>
+        </Step>
+        <Step title={<div>Chat with Files 💬</div>}>
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span> Developed an interactive tool for
+            digital files like PDFs.
+          </span>
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span> Enhanced user interaction and
+            engagement.
+          </span>
+        </Step>
+        <Step
+          title={<div>Shopify Plugin: Inventory Planning & Forecasting 📦</div>}
+        >
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span> Developed an AI-powered Shopify
+            plugin for inventory planning.
+          </span>
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span> Enabled forecasting of
+            replenishments based on Shopify inventory data.
+          </span>
+        </Step>
+      </ul>
+      <Divider />
+
       <Year>2022</Year>
       <ul>
         <Step title={<div>Promoted to Senior Engineer 🧑‍🔬</div>}>
@@ -166,8 +384,8 @@ export default function Timeline() {
             merchants through checkout funnels.
           </span>
           <span className="flex flex-row items-center justify-start">
-            <span className="pr-2">🔸</span> Interviewing candidates for
-            Software Engineering (Frontend).
+            <span className="pr-2">🔸</span> Successfully interviewed and hired
+            2 high-performing Software Engineers.
           </span>
         </Step>
         <Step
@@ -207,6 +425,7 @@ export default function Timeline() {
           }
         ></Step>
       </ul>
+      <Divider />
       <Year>2021</Year>
       <ul>
         <Step
@@ -277,124 +496,6 @@ export default function Timeline() {
           </span>
         </Step>
       </ul>
-
-      <Year>2020</Year>
-      <ul>
-        <Step
-          title={
-            <div>
-              Joined{" "}
-              <a
-                className="pr-1 text-yellow-500"
-                href="https://www.cognizant.com"
-                target="_blank"
-              >
-                Cognizant
-              </a>{" "}
-              🎉
-            </div>
-          }
-        >
-          <span className="flex flex-row items-center justify-start">
-            <span className="pr-2">🔸</span>{" "}
-            <span>Worked on cloud technologies like AWS IoT Greengrass</span>
-          </span>
-
-          <span className="flex flex-row items-center justify-start">
-            <span className="pr-2">🔸</span>{" "}
-            <span>
-              Developed a Career Portal using DotNet Core MVC, AWS
-              ElasticBeanstalk and S3.
-            </span>
-          </span>
-        </Step>
-        <Step title="Graduated with multiple job offers 👨🏼‍🎓">
-          Had 3 offers in hand from Indias top MNCs. Decided to join Cognizant
-          as a Programmer Analyst Trainee
-        </Step>
-        <Step title="Joined Verboculary as an intern 🎉">
-          <span className="flex flex-row items-center justify-start">
-            <span className="pr-2">🔸</span>{" "}
-            <span>
-              Developed reusable components in Angular, Ionic and Typescript for
-              <a
-                className="px-1 text-yellow-500"
-                href="https://play.google.com/store/apps/details?id=com.GREninja.GRE.vocabulary"
-                target="_blank"
-              >
-                GRE Ninja
-              </a>
-            </span>
-          </span>
-
-          <span className="flex flex-row items-center justify-start">
-            <span className="pr-2">🔸</span>{" "}
-            <span>Designing and Prototyping of screens in Figma</span>
-          </span>
-
-          <span className="flex flex-row items-center justify-start">
-            <span className="pr-2">🔸</span>{" "}
-            <span>Dockerization and Setting up CI / CD pipeline</span>
-          </span>
-        </Step>
-      </ul>
-      <Divider />
-      <Year>2019</Year>
-      <ul>
-        <Step title="Elected as Treasurer for CSI 🙋🏼‍♂️">
-          <span className="flex flex-row items-center justify-start">
-            <span className="pr-2">🔸</span>{" "}
-            <span>
-              Conducted IDEA Pitching, Technical Workshops, Poster Designing and
-              other events as part of the EXEC-COM for Computer Society of India
-              ( CSI Student Branch ) .
-            </span>
-          </span>
-          <span className="flex flex-row items-center justify-start">
-            <span className="pr-2">🔸</span>{" "}
-            <span>Spearheaded Coder of the Month</span>
-          </span>
-
-          <span className="flex flex-row items-center justify-start">
-            <span className="pr-2">🔸</span>{" "}
-            <span>
-              Won second place for Code Debugging at the CSI STATE STUDENT
-              CONVENTION
-            </span>
-          </span>
-        </Step>
-        <Step title="Got hands dirty with Machine Learning 🧑🏼‍💻">
-          <div>
-            Developed a{" "}
-            <a
-              className="text-yellow-500 "
-              href="https://github.com/a3har/Lab_report_detector"
-              target="_blank"
-            >
-              model
-            </a>{" "}
-            to detect the important parts of a printed lab report. Initially
-            used Yolo v4 to train the annotated images but then tried Detectron
-            and found better results.{" "}
-          </div>
-        </Step>
-        <Step title="Developed medical record documentation system 🧑🏼‍⚕️">
-          <div>
-            Created a{" "}
-            <a
-              className="text-yellow-500 "
-              href="https://github.com/a3har/MRDS"
-              target="_blank"
-            >
-              system
-            </a>{" "}
-            to digitize paper lab reports and extract structured data as part of
-            my final year project at the university. Used AWS Textract and
-            Regular Expression to achieve it and created a web service using
-            Django
-          </div>
-        </Step>
-      </ul>
       {isShowingFullTimeline ? (
         <FullTimeline />
       ) : (
@@ -421,5 +522,5 @@ export default function Timeline() {
         </button>
       )}
     </>
-  );
+  )
 }

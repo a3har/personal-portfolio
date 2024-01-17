@@ -1,14 +1,14 @@
 // import Analytics from "@/components/metrics/Analytics";
 // import Buttondown from "@/components/metrics/Buttondown";
-import Container from "@/components/Container";
-import GitHub from "@/components/metrics/Github";
-import Followers from "@/components/metrics/Followers";
-import Following from "@/components/metrics/Following";
-import Repositories from "@/components/metrics/Repositories";
-import TopTracks from "@/components/TopTracks";
-import TwitterStatistics from "@/components/metrics/TwitterStatistics";
-import Analytics from "@/components/metrics/Analytics";
-import { NAME } from "constants/app";
+import Container from "@/components/Container"
+import GitHub from "@/components/metrics/Github"
+import Followers from "@/components/metrics/Followers"
+import Following from "@/components/metrics/Following"
+import Repositories from "@/components/metrics/Repositories"
+import TopTracks from "@/components/TopTracks"
+import TwitterStatistics from "@/components/metrics/TwitterStatistics"
+import Analytics from "@/components/metrics/Analytics"
+import { NAME } from "constants/app"
 // import NowPlaying from "@/components/NowPlaying";
 // import TopTracks from "@/components/TopTracks";
 // Have one for twitter
@@ -27,7 +27,7 @@ export default function Dashboard() {
           <p className="mb-4 text-gray-600 dark:text-gray-400">
             This dashboard is created with NextJS _api routes converted to
             serverless functions that tracks various metrics across platforms
-            like GitHub, Twitter, Spotify and more 🚀.
+            like GitHub and Shopify 🚀.
           </p>
         </div>
         {/* <div className="flex flex-col w-full">
@@ -43,12 +43,12 @@ export default function Dashboard() {
           <Following />
           <Repositories />
         </div>{" "}
-        <div className="grid w-full grid-cols-1 gap-4 my-2 sm:grid-cols-2">
+        {/* <div className="grid w-full grid-cols-1 gap-4 my-2 sm:grid-cols-2">
           <TwitterStatistics type="followers" />
           <TwitterStatistics type="following" />
-        </div>{" "}
+        </div>{" "} */}
         <div className="grid w-full grid-cols-1 gap-4 my-2 sm:grid-cols-2">
-          <TwitterStatistics type="total_tweets" />
+          {/* <TwitterStatistics type="total_tweets" /> */}
           {/* <Analytics /> */}
         </div>
         <h2 className="mt-16 mb-4 text-3xl font-bold tracking-tight text-black dark:text-white">
@@ -61,5 +61,5 @@ export default function Dashboard() {
         <TopTracks />
       </div>
     </Container>
-  );
+  )
 }
