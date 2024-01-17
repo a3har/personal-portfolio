@@ -1,7 +1,7 @@
-import Link from "next/link";
-import NowPlaying from "@/components/NowPlaying";
+import Link from "next/link"
+import NowPlaying from "@/components/NowPlaying"
 
-import * as Social from "constants/social";
+import * as Social from "constants/social"
 
 const ExternalLink = ({ href, children }) => (
   <a
@@ -12,7 +12,7 @@ const ExternalLink = ({ href, children }) => (
   >
     {children}
   </a>
-);
+)
 
 export default function Footer() {
   return (
@@ -53,11 +53,6 @@ export default function Footer() {
               Snippets
             </a>
           </Link> */}
-          <Link href="/tweets">
-            <a className="text-gray-500 transition hover:text-gray-600">
-              Tweets
-            </a>
-          </Link>
           <Link href="/resources">
             <a className="text-gray-500 transition hover:text-gray-600">
               Resources
@@ -84,5 +79,5 @@ export default function Footer() {
         </a>
       </p>
     </footer>
-  );
+  )
 }
