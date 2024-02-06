@@ -39,11 +39,11 @@ export default function projects() {
           tags={["React", "Node", "Shopify"]}
         />
         <ProjectCard
-          title="GRE Ninja"
-          description="Learn important GRE words easily on GREninja app with flashcards, contextual image and podcasts."
-          href="https://play.google.com/store/apps/details?id=com.GREninja.GRE.vocabulary"
-          Icon={Icons.GreNinja}
-          tags={["Angular", "Firebase", "Ionic"]}
+          title="Glood Product Recommendations"
+          description="Boost Conversions & AoV by showing Personalized Product Recommendations, Upselling, Cross Selling."
+          href="https://apps.shopify.com/recommendation-kit"
+          Icon={Icons.Glood}
+          tags={["React", "Django", "Shopify"]}
         />
 
         <h3 className="mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
@@ -59,14 +59,6 @@ export default function projects() {
         />
 
         <ProjectCard
-          title="Food Menu - UI Design"
-          description="View the restaurant menu before you enter it."
-          href="https://www.figma.com/file/dSFqCEq0OQ4s1KmPunV8jk/Food-Menu?node-id=0%3A1"
-          Icon={Icons["Pizza"]}
-          tags={["Figma", "UI Design"]}
-        />
-
-        <ProjectCard
           title="Lab Report Crawler - Machine Learning"
           description="Machine Learning model that can detect the important parts of a medical lab report so that structured data can be extracted from it."
           href="https://github.com/a3har/Lab_report_detector"
@@ -74,6 +66,21 @@ export default function projects() {
           tags={["Machine Learning", "Detectron", "Colab"]}
         />
 
+        <ProjectCard
+          title="GRE Ninja"
+          description="Learn important GRE words easily on GREninja app with flashcards, contextual image and podcasts."
+          href="https://play.google.com/store/apps/details?id=com.GREninja.GRE.vocabulary"
+          Icon={Icons.GreNinja}
+          tags={["Angular", "Firebase", "Ionic"]}
+        />
+
+        <ProjectCard
+          title="Food Menu - UI Design"
+          description="View the restaurant menu before you enter it."
+          href="https://www.figma.com/file/dSFqCEq0OQ4s1KmPunV8jk/Food-Menu?node-id=0%3A1"
+          Icon={Icons["Pizza"]}
+          tags={["Figma", "UI Design"]}
+        />
         <a
           href="https://github.com/a3har"
           className="flex flex-row items-center justify-center px-4 py-2 mx-auto text-gray-800 border rounded-md dark:text-gray-300"

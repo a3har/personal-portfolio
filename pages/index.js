@@ -78,11 +78,11 @@ export default function Home() {
           tags={["React", "Node", "Shopify"]}
         />
         <ProjectCard
-          title="GRE Ninja"
-          description="Learn important GRE words easily on GREninja app with flashcards, contextual image and podcasts."
-          href="https://play.google.com/store/apps/details?id=com.GREninja.GRE.vocabulary"
-          Icon={Icons.GreNinja}
-          tags={["Angular", "Firebase", "Ionic"]}
+          title="Glood Product Recommendations"
+          description="Boost Conversions & AoV by showing Personalized Product Recommendations, Upselling, Cross Selling."
+          href="https://apps.shopify.com/recommendation-kit"
+          Icon={Icons.Glood}
+          tags={["React", "Django", "Shopify"]}
         />
 
         <Link href="/projects">
