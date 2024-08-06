@@ -1,30 +1,30 @@
-import { useState, useRef } from "react";
-import Link from "next/link";
+import { useState, useRef } from "react"
+import Link from "next/link"
 // import useSWR from "swr";
-import format from "comma-number";
+import format from "comma-number"
 // import { trackGoal } from "fathom-client";
 
 // import fetcher from "@/lib/fetcher";
-import SuccessMessage from "@/components/SuccessMessage";
-import ErrorMessage from "@/components/ErrorMessage";
-import LoadingSpinner from "@/components/LoadingSpinner";
+import SuccessMessage from "@/components/SuccessMessage"
+import ErrorMessage from "@/components/ErrorMessage"
+import LoadingSpinner from "@/components/LoadingSpinner"
 
-import * as Social from "constants/social";
+import * as Social from "constants/social"
 
 export default function Contact() {
   const Divider = () => {
     return (
       <div className="w-full my-8 border border-gray-200 dark:border-gray-600" />
-    );
-  };
-  const [form, setForm] = useState(false);
-  const inputEl = useRef(null);
+    )
+  }
+  const [form, setForm] = useState(false)
+  const inputEl = useRef(null)
   //   const { data } = useSWR("/api/subscribers", fetcher);
   //   const subscriberCount = format(data?.count);
 
   const subscribe = async (e) => {
-    e.preventDefault();
-    setForm({ state: "loading" });
+    e.preventDefault()
+    setForm({ state: "loading" })
 
     const res = await fetch("/api/sendgrid", {
       body: JSON.stringify({
@@ -34,24 +34,24 @@ export default function Contact() {
         "Content-Type": "application/json",
       },
       method: "POST",
-    });
+    })
 
-    const { error } = await res.json();
+    const { error } = await res.json()
     if (error) {
       setForm({
         state: "error",
         message: error,
-      });
-      return;
+      })
+      return
     }
 
     // trackGoal("JYFUFMSF", 0);
-    inputEl.current.value = "";
+    inputEl.current.value = ""
     setForm({
       state: "success",
       message: `Hooray! You're now on the list. Check your inbox or promotions for a mail.`,
-    });
-  };
+    })
+  }
 
   return (
     <div className="w-full p-6 my-4 border border-blue-200 rounded dark:border-gray-800 bg-blue-50 dark:bg-blue-opaque">
@@ -69,7 +69,7 @@ export default function Contact() {
         Chat on WhatsApp
       </a>
 
-      <Divider />
+      {/* <Divider />
       <p className="my-1 text-gray-800 dark:text-gray-200">
         Drop in your email ID and I will get back to you.
       </p>
@@ -97,7 +97,7 @@ export default function Contact() {
         <SuccessMessage>{form.message}</SuccessMessage>
       ) : (
         <p className="text-sm text-gray-800 dark:text-gray-200"></p>
-      )}
+      )} */}
     </div>
-  );
+  )
 }

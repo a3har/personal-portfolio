@@ -8,6 +8,7 @@ import NotionAvatar from "./notion_avatar.svg"
 import Checkout from "./checkout.svg"
 import Zella from "./zella.svg"
 import RentRover from "./rent_rover.svg"
+import OutmarketLogo from "./outmarket.svg"
 
 const Icons = {}
 
@@ -21,5 +22,6 @@ Icons.NotionAvatar = NotionAvatar
 Icons.Checkout = Checkout
 Icons.Zella = Zella
 Icons.RentRover = RentRover
+Icons.Outmarket = OutmarketLogo
 
 export default Icons

@@ -45,9 +45,11 @@ export default function Home() {
           </h1>
 
           <h2 className="mt-4 mb-16 font-light leading-loose tracking-wide text-gray-600 dark:text-gray-400">
-            <span className="pr-1">I’m a developer and builder. I work at</span>
-            <a className="pr-1 font-bold" href="https://glood.ai">
-              Glood AI
+            <span className="pr-1">
+              I’m a craftsman building fun experiences for the web. I work at
+            </span>
+            <a className="pr-1 font-bold" href="https://outmarket.ai">
+              Outmarket AI
             </a>
             <span className="pr-2">as a</span>
             <RainbowHighlight color={colors[1]}>
@@ -64,11 +66,11 @@ export default function Home() {
           Projects
         </h3>
         <ProjectCard
-          title="Zella AI: The AI Gateway"
-          description="Unified API Gateway for adding AI"
-          href="https://zella.ai/"
-          Icon={Icons.Zella}
-          tags={["Next", "Node", "LLM", "AI"]}
+          title="Outmarket AI: AI for Insurance"
+          description="Platform that derives insights from Insurance data to help Insurance companies make better decisions."
+          href="https://outmarket.ai/"
+          Icon={Icons.Outmarket}
+          tags={["Flutter", "Postgres", "LLM", "AI"]}
         />
         <ProjectCard
           title="Checkout Sections & Upsell AI"

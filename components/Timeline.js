@@ -275,9 +275,50 @@ export default function Timeline() {
       <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
         Timeline
       </h3>
+      <Year>2024</Year>
+      <span className="mb-2 text-gray-700 dark:text-gray-400">
+        {/* Description of the year */}
+      </span>
+      <ul>
+        <Step
+          title={
+            <div>
+              Joined{" "}
+              <a
+                className="pr-1 text-yellow-500"
+                href="https://outmarket.ai"
+                target="_blank"
+              >
+                Outmarket.AI
+              </a>{" "}
+              🎉
+            </div>
+          }
+        >
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span>{" "}
+            <span>
+              Became a member of a team of amazing engineers, including former
+              Director of Engineering at Meta and former Head of Ads at Meta.
+            </span>
+          </span>
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span> <span>Hired as employee #3.</span>
+          </span>
+          <span className="flex flex-row items-center justify-start">
+            <span className="pr-2">🔸</span>{" "}
+            <span>
+              Started developing cross-platform applications using Flutter for
+              the first time.
+            </span>
+          </span>
+        </Step>
+        <Step title="Tied the knot 💍"></Step>
+      </ul>
       <Year>2023</Year>
       <span className="mb-2 text-gray-700 dark:text-gray-400">
-        This year was an amazing one for me as it was one of experimentations
+        This year was an amazing one for me as it was one of experimentations.
+        This is the year AI changed how I work.
       </span>
       <ul>
         <Step
