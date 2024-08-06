@@ -303,7 +303,8 @@ export default function Timeline() {
             </span>
           </span>
           <span className="flex flex-row items-center justify-start">
-            <span className="pr-2">🔸</span> <span>Hired as employee #3.</span>
+            <span className="pr-2">🔸</span>{" "}
+            <span>Hired as employee #3 and Senior Software Engineer.</span>
           </span>
           <span className="flex flex-row items-center justify-start">
             <span className="pr-2">🔸</span>{" "}
