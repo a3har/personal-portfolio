@@ -285,8 +285,8 @@ export default function Timeline() {
       </h3>
       <Year>2026</Year>
       <span className="mb-2 text-gray-700 dark:text-gray-400">
-        Outmarket hits an inflection point with explosive growth, major
-        partnerships, and our Series A.
+        Outmarket hits an inflection point with explosive growth and raises
+        Series A.
       </span>
       <ul>
         <Step
@@ -394,13 +394,32 @@ export default function Timeline() {
           <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span>{" "}
             <span>
-              Became a member of a team of amazing engineers, including former
-              Director of Engineering at Meta and former Head of Ads at Meta.
+              Hired as engineer #3 at Outmarket, led by industry veterans{" "}
+              <a
+                className="px-1 text-yellow-500"
+                href="https://www.linkedin.com/in/vishalsankhla/"
+                target="_blank"
+              >
+                Vishal Sankhla
+              </a>
+              ( Ex Director of Engineering at Meta and Head of Product at Uber)
+              and{" "}
+              <a
+                className="px-1 text-yellow-500"
+                href="https://www.linkedin.com/in/anshujain/?skipRedirect=true"
+                target="_blank"
+              >
+                Anshu Jain
+              </a>
+              ( Ex Head of Ads Solution Engineering at Meta).
             </span>
           </span>
           <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span>{" "}
-            <span>Hired as employee #3 and Senior Software Engineer.</span>
+            <span>
+              Co-led all UI development at Outmarket, owning design quality and
+              frontend architecture as the product and team scaled.
+            </span>
           </span>
           <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span>{" "}
@@ -410,32 +429,7 @@ export default function Timeline() {
             </span>
           </span>
         </Step>
-        <Step title="Migrated frontend from Flutter to React ⚛️">
-          <span className="mb-2">
-            We decided to migrate our FE codebase to React for the following
-            reasons:
-          </span>
-          <span className="flex flex-row items-start justify-start">
-            <span className="pr-2">🔸</span>{" "}
-            <span>
-              A larger community and ecosystem of open source libraries.
-            </span>
-          </span>
-          <span className="flex flex-row items-start justify-start">
-            <span className="pr-2">🔸</span>{" "}
-            <span>
-              AI writes React better, thanks to more context and training data
-              around the ecosystem.
-            </span>
-          </span>
-          <span className="flex flex-row items-start justify-start">
-            <span className="pr-2">🔸</span>{" "}
-            <span>
-              Easier to hire frontend developers with React experience because
-              of a larger pool of candidates.
-            </span>
-          </span>
-        </Step>
+        <Step title="Migrated frontend from Flutter to React ⚛️"></Step>
       </ul>
       <Year>2023</Year>
       <span className="mb-2 text-gray-700 dark:text-gray-400">
@@ -627,7 +621,7 @@ export default function Timeline() {
         >
           <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span>{" "}
-            <span> Joined a blazing fast paced startup as employee #1</span>
+            <span> Joined a blazing fast paced startup as engineer #1</span>
           </span>
 
           <span className="flex flex-row items-start justify-start">
