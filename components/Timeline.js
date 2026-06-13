@@ -15,9 +15,15 @@ const Year = ({ children }) => {
 }
 
 const Step = ({ title, children }) => {
+  const hasChildren = Boolean(children)
+
   return (
     <li className="mb-4 ml-2">
-      <div className="flex items-center mb-2 text-green-700 dark:text-green-300">
+      <div
+        className={`flex items-center text-green-700 dark:text-green-300${
+          hasChildren ? " mb-2" : ""
+        }`}
+      >
         <span className="sr-only">Check</span>
         <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24">
           <g
@@ -33,9 +39,11 @@ const Step = ({ title, children }) => {
         </svg>
         <p className="font-medium text-gray-900 dark:text-gray-100">{title}</p>
       </div>
-      <div className="flex flex-col ml-6 text-gray-700 dark:text-gray-400">
-        {children}
-      </div>
+      {hasChildren && (
+        <div className="flex flex-col ml-6 text-gray-700 dark:text-gray-400">
+          {children}
+        </div>
+      )}
     </li>
   )
 }
@@ -60,12 +68,12 @@ const FullTimeline = () => (
           </div>
         }
       >
-        <span className="flex flex-row items-center justify-start">
+        <span className="flex flex-row items-start justify-start">
           <span className="pr-2">🔸</span>{" "}
           <span>Worked on cloud technologies like AWS IoT Greengrass</span>
         </span>
 
-        <span className="flex flex-row items-center justify-start">
+        <span className="flex flex-row items-start justify-start">
           <span className="pr-2">🔸</span>{" "}
           <span>
             Developed a Career Portal using DotNet Core MVC, AWS
@@ -78,7 +86,7 @@ const FullTimeline = () => (
         a Programmer Analyst Trainee
       </Step>
       <Step title="Joined Verboculary as an intern 🎉">
-        <span className="flex flex-row items-center justify-start">
+        <span className="flex flex-row items-start justify-start">
           <span className="pr-2">🔸</span>{" "}
           <span>
             Developed reusable components in Angular, Ionic and Typescript for
@@ -92,12 +100,12 @@ const FullTimeline = () => (
           </span>
         </span>
 
-        <span className="flex flex-row items-center justify-start">
+        <span className="flex flex-row items-start justify-start">
           <span className="pr-2">🔸</span>{" "}
           <span>Designing and Prototyping of screens in Figma</span>
         </span>
 
-        <span className="flex flex-row items-center justify-start">
+        <span className="flex flex-row items-start justify-start">
           <span className="pr-2">🔸</span>{" "}
           <span>Dockerization and Setting up CI / CD pipeline</span>
         </span>
@@ -107,7 +115,7 @@ const FullTimeline = () => (
     <Year>2019</Year>
     <ul>
       <Step title="Elected as Treasurer for CSI 🙋🏼‍♂️">
-        <span className="flex flex-row items-center justify-start">
+        <span className="flex flex-row items-start justify-start">
           <span className="pr-2">🔸</span>{" "}
           <span>
             Conducted IDEA Pitching, Technical Workshops, Poster Designing and
@@ -115,12 +123,12 @@ const FullTimeline = () => (
             CSI Student Branch ) .
           </span>
         </span>
-        <span className="flex flex-row items-center justify-start">
+        <span className="flex flex-row items-start justify-start">
           <span className="pr-2">🔸</span>{" "}
           <span>Spearheaded Coder of the Month</span>
         </span>
 
-        <span className="flex flex-row items-center justify-start">
+        <span className="flex flex-row items-start justify-start">
           <span className="pr-2">🔸</span>{" "}
           <span>
             Won second place for Code Debugging at the CSI STATE STUDENT
@@ -275,6 +283,94 @@ export default function Timeline() {
       <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
         Timeline
       </h3>
+      <Year>2026</Year>
+      <span className="mb-2 text-gray-700 dark:text-gray-400">
+        Outmarket hits an inflection point with explosive growth, major
+        partnerships, and our Series A.
+      </span>
+      <ul>
+        <Step
+          title={
+            <div>
+              <a
+                className="pr-1 text-yellow-500"
+                href="https://outmarket.ai"
+                target="_blank"
+              >
+                Outmarket AI
+              </a>{" "}
+              scales explosively 🚀
+            </div>
+          }
+        >
+          <span className="flex flex-row items-start justify-start">
+            <span className="pr-2">🔸</span>{" "}
+            <span>
+              Over 250 insurance agencies start trusting us with running some of
+              their most critical day to day workflows
+            </span>
+          </span>
+          <span className="flex flex-row items-start justify-start">
+            <span className="pr-2">🔸</span>{" "}
+            <span>
+              Expanded our reach through developing multiple partner channels
+              across the insurance ecosystem.
+            </span>
+          </span>
+        </Step>
+        <Step
+          title={
+            <div>
+              <a
+                className="px-1 text-yellow-500"
+                href="https://outmarket.ai"
+                target="_blank"
+              >
+                Outmarket AI
+              </a>{" "}
+              raises{" "}
+              <a
+                className="px-1 text-yellow-500"
+                href="https://outmarket.ai/blog/why-we-bet-on-insurance-and-why-the-industry-bet-on-us"
+                target="_blank"
+              >
+                $17M in Series A
+              </a>{" "}
+              to accelerate product development 💰
+            </div>
+          }
+        ></Step>
+      </ul>
+      <Year>2025</Year>
+      <span className="mb-2 text-gray-700 dark:text-gray-400">
+        A year of major platform bets at Outmarket and the best personal
+        milestone yet.
+      </span>
+      <ul>
+        <Step title="Welcomed my son, Idris 👶">
+          Became a dad, the most meaningful milestone of the year.
+        </Step>
+        <Step title="Built self-serve product infrastructure 🏗️">
+          <span className="flex flex-row items-start justify-start">
+            <span className="pr-2">🔸</span>{" "}
+            <span>
+              Led the shift from a manually serviced product to self-serve
+              onboarding for clients.
+            </span>
+          </span>
+          <span className="flex flex-row items-start justify-start">
+            <span className="pr-2">🔸</span>{" "}
+            <span>
+              Architected scalable billing systems, user management, and
+              internal tooling to support a growing single-tenant architecture.
+            </span>
+          </span>
+        </Step>
+        <Step title="Built AI workflow automation tools 🤖">
+          Built tools that simplify complex, industry-specific processes for
+          insurance professionals.
+        </Step>
+      </ul>
       <Year>2024</Year>
       <span className="mb-2 text-gray-700 dark:text-gray-400">
         {/* Description of the year */}
@@ -289,24 +385,24 @@ export default function Timeline() {
                 href="https://outmarket.ai"
                 target="_blank"
               >
-                Outmarket.AI
+                Outmarket AI
               </a>{" "}
               🎉
             </div>
           }
         >
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span>{" "}
             <span>
               Became a member of a team of amazing engineers, including former
               Director of Engineering at Meta and former Head of Ads at Meta.
             </span>
           </span>
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span>{" "}
             <span>Hired as employee #3 and Senior Software Engineer.</span>
           </span>
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span>{" "}
             <span>
               Started developing cross-platform applications using Flutter for
@@ -314,14 +410,40 @@ export default function Timeline() {
             </span>
           </span>
         </Step>
-        <Step title="Tied the knot 💍"></Step>
+        <Step title="Migrated frontend from Flutter to React ⚛️">
+          <span className="mb-2">
+            We decided to migrate our FE codebase to React for the following
+            reasons:
+          </span>
+          <span className="flex flex-row items-start justify-start">
+            <span className="pr-2">🔸</span>{" "}
+            <span>
+              A larger community and ecosystem of open source libraries.
+            </span>
+          </span>
+          <span className="flex flex-row items-start justify-start">
+            <span className="pr-2">🔸</span>{" "}
+            <span>
+              AI writes React better, thanks to more context and training data
+              around the ecosystem.
+            </span>
+          </span>
+          <span className="flex flex-row items-start justify-start">
+            <span className="pr-2">🔸</span>{" "}
+            <span>
+              Easier to hire frontend developers with React experience because
+              of a larger pool of candidates.
+            </span>
+          </span>
+        </Step>
       </ul>
       <Year>2023</Year>
       <span className="mb-2 text-gray-700 dark:text-gray-400">
-        This year was an amazing one for me as it was one of experimentations.
-        This is the year AI changed how I work.
+        A year of experimentations at work, getting married to the love of my
+        life, and discovering how AI changed how I work.
       </span>
       <ul>
+        <Step title="Tied the knot and got married to the love of my life. 💍" />
         <Step
           title={
             <div>
@@ -336,11 +458,11 @@ export default function Timeline() {
             </div>
           }
         >
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span> Led the development of a robust AI
             gateway tool.
           </span>
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span> Ensured seamless AI integrations
             and operations.
           </span>
@@ -360,45 +482,45 @@ export default function Timeline() {
             </div>
           }
         >
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span> Developed a customizable,
             AI-powered Shopify plugin.
           </span>
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span> Enhanced checkout experience to
             boost merchant's AoV.
           </span>
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span> Introduced advanced discount
             options to protect revenue.
           </span>
         </Step>
         <Step title={<div>Workplace Assistant 🤖</div>}>
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span> Created a workplace assistant that
             makes use of LLMs.
           </span>
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span> Streamlined communication between
             colleagues by providing AI-driven responses.
           </span>
         </Step>
         <Step title={<div>PM Insight Tool 📊</div>}>
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span> Developed an insight tool for
             project managers.
           </span>
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span> Identified potential new features
             and current customer pain points.
           </span>
         </Step>
         <Step title={<div>Chat with Files 💬</div>}>
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span> Developed an interactive tool for
             digital files like PDFs.
           </span>
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span> Enhanced user interaction and
             engagement.
           </span>
@@ -406,11 +528,11 @@ export default function Timeline() {
         <Step
           title={<div>Shopify Plugin: Inventory Planning & Forecasting 📦</div>}
         >
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span> Developed an AI-powered Shopify
             plugin for inventory planning.
           </span>
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span> Enabled forecasting of
             replenishments based on Shopify inventory data.
           </span>
@@ -421,11 +543,11 @@ export default function Timeline() {
       <Year>2022</Year>
       <ul>
         <Step title={<div>Promoted to Senior Engineer 🧑‍🔬</div>}>
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span> Increasing AoV for Shopify
             merchants through checkout funnels.
           </span>
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span> Successfully interviewed and hired
             2 high-performing Software Engineers.
           </span>
@@ -445,10 +567,10 @@ export default function Timeline() {
             </div>
           }
         >
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span> Brought back PWA functionality
           </span>
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span> <span>Revamped onboarding</span>
           </span>
         </Step>
@@ -503,12 +625,12 @@ export default function Timeline() {
             </div>
           }
         >
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span>{" "}
             <span> Joined a blazing fast paced startup as employee #1</span>
           </span>
 
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span>
             <span>
               Worked on the flagship product{" "}
@@ -522,7 +644,7 @@ export default function Timeline() {
             </span>
           </span>
 
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span>
             <span>
               Catered to customer support to gather feedback and then
@@ -530,7 +652,7 @@ export default function Timeline() {
             </span>
           </span>
 
-          <span className="flex flex-row items-center justify-start">
+          <span className="flex flex-row items-start justify-start">
             <span className="pr-2">🔸</span>
             <span>
               Wore multiple hats and got to work with experienced veterans
