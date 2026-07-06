@@ -110,7 +110,7 @@ export default function Home() {
           </a>
         </Link>
         <Timeline />
-        <Contact />
+        {/* <Contact /> */}
       </div>
     </Container>
   )

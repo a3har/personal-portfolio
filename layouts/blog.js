@@ -1,11 +1,11 @@
-import Image from "next/image";
-import { parseISO, format } from "date-fns";
+import Image from "next/image"
+import { parseISO, format } from "date-fns"
 
-import Container from "@/components/Container";
-import ViewCounter from "@/components/ViewCounter";
-import Contact from "@/components/Contact";
-import Link from "next/link";
-import { NAME } from "constants/app";
+import Container from "@/components/Container"
+import ViewCounter from "@/components/ViewCounter"
+import Contact from "@/components/Contact"
+import Link from "next/link"
+import { NAME } from "constants/app"
 
 export default function BlogLayout({ children, frontMatter }) {
   return (
@@ -62,9 +62,9 @@ export default function BlogLayout({ children, frontMatter }) {
         <div className="w-full prose dark:prose-dark max-w-none">
           {children}
         </div>
-        <div className="w-full mx-auto mt-8">
+        {/* <div className="w-full mx-auto mt-8">
           <Contact />
-        </div>
+        </div> */}
         {/* <div className="text-sm text-gray-700 dark:text-gray-300">
           <a
             href={discussUrl(frontMatter.slug)}
@@ -84,5 +84,5 @@ export default function BlogLayout({ children, frontMatter }) {
         </div> */}
       </article>
     </Container>
-  );
+  )
 }
