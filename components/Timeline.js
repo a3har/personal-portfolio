@@ -402,7 +402,6 @@ export default function Timeline() {
               >
                 Vishal Sankhla
               </a>
-              ( Ex Director of Engineering at Meta and Head of Product at Uber)
               and{" "}
               <a
                 className="px-1 text-yellow-500"
@@ -411,7 +410,6 @@ export default function Timeline() {
               >
                 Anshu Jain
               </a>
-              ( Ex Head of Ads Solution Engineering at Meta).
             </span>
           </span>
           <span className="flex flex-row items-start justify-start">
